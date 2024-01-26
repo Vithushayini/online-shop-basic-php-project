@@ -1,0 +1,403 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+    
+    color: #111;
+    background: #f9f7f7;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+
+}
+
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background:#f2dbdb;
+    padding: 5px 5%;
+    position:sticky;
+    top:0;
+    z-index: 100;
+    width: 100%;
+}
+
+
+
+.logo
+{
+    width: 200px;
+    font-size: 25px;
+   
+}
+
+.nav-left,.nav-right{
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+
+ .nav-left ul li{
+    list-style: none;
+    display: inline-block;
+    font-weight:lighter;
+    font-size: 18px;
+} 
+
+.nav-left{
+   margin: 2%;
+   padding: 5px;
+}
+
+.nav-left h1{
+   color: #ae2356; 
+   font-weight: bolder;
+   margin-right: 2px;
+}
+
+ .nav-left ul{
+  padding: 20px;
+}
+
+
+.nav-left ul li a{
+    width: 28px;
+    margin: 0 15px;
+    color: #bb6565;
+} 
+
+.nav-user-icon img{
+    width:40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 3px;
+}
+.nav-user-icon{
+    margin-left: 30px;
+}
+.online{
+    position: relative;
+}
+.online::after{
+    content: '';
+    width: 7px;
+    height: 7px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: #07f627;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+}
+.user-profile{
+    display: flex;
+    align-items: center;
+    padding: 2%;
+
+}
+
+.user-profile img{
+    width: 30px;
+    /* border-radius: 50%; */
+    margin-right: 10px;
+    margin-top: 2px;
+}
+
+.user-profile p{
+    margin-bottom: -5px;
+    font-weight: 600;
+    color: #054581;
+    font-size: 15px;
+   
+}
+
+.settings-menu{
+    position:absolute;
+    width: 90%;
+    max-width: 350px;
+    background: var(--bg-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    overflow: hidden;
+    top: 108%;
+    right: 5%;
+    max-height:450px;
+    transition: max-height 0.3s;
+    display: none;
+  
+    
+}
+   
+.user-profile a{
+    font-size: 12px;
+    color: #1876f2;
+    text-decoration: none;
+}
+
+.settings-menu-inner{
+    padding: 20px;
+
+}
+
+.settings-menu hr{
+    border: 0;
+    height: 1px;
+    background: #9a9a9a;
+    margin: 15px 0;
+}
+
+
+
+
+/*CSS code for index.php, signup.php, admin.php*/
+
+.form-control {
+    min-height: 54px;
+    box-shadow: none !important;
+    border: 2px solid #ae2356;
+    background-color: rgb(249, 211, 211);
+}
+.form-control:focus {
+    border-color: #080000;
+}
+.form-control, .btn {        
+    border-radius: 3px;
+}
+.form {
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.form h4 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #9d1848;
+}
+
+.form form {
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background: #f3efef;
+    box-shadow: 0px 0px 17px rgba(163, 1, 1, 0.3);
+    padding: 30px;
+}
+
+.form .form-group {
+    margin-bottom: 20px;
+    padding: 0 15px;
+    color: #aa0457;
+}
+
+.form label {
+    font-weight: normal;
+    font-size: 15px;
+    padding-left: 5px;
+    vertical-align: middle;
+    color: #870430;
+}
+
+
+.form .btn {        
+    font-size: 16px;
+    font-weight: bold;
+   background: #9d1848;
+    border: none;
+    margin-top: 20px;
+    min-width: 140px;
+}
+
+.form .btn:hover, .form .btn:focus {
+    background: #6a6868;
+    outline: none !important;
+}
+
+.form a {
+    text-decoration: underline;
+}
+
+.form a:hover {
+    text-decoration: none;
+}
+.form form a {
+    color: #5cd3b4;
+    text-decoration: none;
+}	
+.form form a:hover {
+    text-decoration: underline;
+}
+
+.formerror {
+    text-align: center;
+    color: rgb(112, 3, 3);
+}
+
+.form .heading {
+    margin: 0 auto 30px;
+    text-align: center;
+    
+ 
+}
+
+.form .heading i {
+    font-size: 62px;
+    color: #71032b;
+}
+
+.form .top{
+    
+    margin-top: 25px;
+}
+
+.form .new{
+    font-family: Helvetica;
+    font-size: 22px;
+    margin: 20px auto;
+    font-weight: 700;
+    color: darkolivegreen;
+    text-align: center;}
+
+.bottom-text{
+    text-align: center;
+    font-size: 18px;
+    margin: 50px;
+    color: #71032b;
+}
+
+.bottom-text a{
+    text-decoration: none;
+    color: #6e6d6d;
+}
+
+/* CSS for read.php */
+
+.read-card{
+    margin: 20px auto;
+}
+
+.post-time{
+    
+    font-size: 90%;
+    color: dimgrey;
+    margin-bottom: 10px;
+    
+}
+
+.new-post{
+    
+    height: 20px;
+    width: 40px;
+    border-radius: 15px;
+    color: white;
+    background-color: red;
+    text-align: center;
+    font-size: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px;
+    padding: 3px;
+
+}
+
+#postlogout{
+    text-align: center;  
+    font-size: 90%;
+    margin-bottom: 20px;
+}
+
+#postlogout a{
+    color: #111;
+    text-decoration: none;
+}
+
+/*Logout Page*/
+
+.logoutsuccess{
+    color: dimgrey;
+    text-align: center;
+    font-size: 95%;
+}
+
+
+/* CSS code for message page */
+
+#container{
+	background:#222;
+	margin: 50px auto;
+	overflow:auto;
+	width:90%;
+	min-height:630px;
+    border-radius: 5px;
+}
+
+#container h1{
+    font-size: 25px;
+    padding: 18px 0 0 5%;
+    margin: 0;
+    color: #fff;
+    font-weight: bold;
+}
+
+#inputtitle{
+	width:90%;
+	min-height:50px;
+	margin:auto;
+	padding:0;
+}
+
+#txttitle{
+    width: 100%;
+    font-size: 20px;
+    margin: 20px 0 5px 0;
+    height: 40px;
+}
+
+#message{
+	width:90%;
+	background:#f4f4f4;
+	height:450px;
+	margin:20px auto;
+	overflow:auto;
+}
+
+#submit-section{
+    width: 90%;
+    min-height: 50px;
+    margin: 12px auto;
+    padding: 0;
+}
+
+#postsubmit {
+
+    height: 40px;
+    width: 100px;
+    padding: 3px;
+    float: right;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#postoptions {
+
+    display: inline;
+    height: 40px;
+    margin: 0 15px 0 0;
+    width: 150px;
+    float: right;
+    font-size: 15px;
+    font-weight: 600;
+
+}
+
+.error{
+	color:white;
+    text-align: center;
+}
+
+
+.read-card{
+    margin: 20px auto;
+}
+
